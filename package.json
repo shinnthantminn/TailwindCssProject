@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tw": "npx tailwindcss-cli build -i ./src/style.css -o ./dist/styles.css",
+    "deploy":"gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://shinnthantminn.github.io/TailwindCssProject/",
+  "devDependencies": {
+    "tailwindcss": "^3.0.12"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

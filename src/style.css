@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.headerText {
+     @apply text-3xl uppercase text-black font-semibold;
+}
+
+.headerStick{
+     @apply block border-b-2 border-black w-20 mb-1 h-2;
+}
+
+.card {
+     @apply rounded-2xl shadow-sm flex justify-center items-center flex-col relative px-40 overflow-hidden hover:shadow-2xl duration-500;
+}
+
+.img {
+     @apply w-48 pt-20 pb-12 duration-500;
+}
+
+.cardContent {
+     @apply flex w-96 justify-evenly mb-7 duration-500;
+}
+
+.animator{
+     @apply absolute left-48min bg-black text-white font-bold vertical-rl transform rotate-180 h-100 flex justify-center items-center w-12 duration-500;
+}
+
+.card:hover .animator {
+     @apply left-0;
+}
+
+.card:hover .img {
+     @apply transform rotate-30 ml-20;
+}
+
+.card:hover .cardContent{
+     @apply ml-10 px-10;
+}
